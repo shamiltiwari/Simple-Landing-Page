@@ -106,8 +106,7 @@ nav{
 .left-coloumn img{
     align-items: center;
     justify-content: center;
-    padding: 0px 20px;
-    padding-top: 3.5rem;
+    margin-top: 4rem;
     width: 100%;
 }
 
@@ -119,4 +118,56 @@ nav{
     background-color: #495464;
     color: white;
     text-align: center;
+}
+
+/* media quries starts  */
+@media screen and (max-width: 1024px) {
+    .left-coloumn img{
+        margin-top: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .hero{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-coloumn{
+        display: flex;
+        width: auto;
+        justify-content: center;
+        /* border: 2px solid black; */
+    }
+
+    .left-coloumn img{
+        padding: 0;
+        margin-top: 2rem;
+        width: 70%;
+    }
+
+    .right-coloumn{
+        margin-top: 1.5rem;
+        width: auto;
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer{
+        margin-top: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+
+    #nav{
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    .left-coloumn img{
+        width: 100%;
+    }
+    
 }
